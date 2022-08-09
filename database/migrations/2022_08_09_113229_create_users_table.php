@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsers extends Migration
+class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,6 @@ class CreateUsers extends Migration
      */
     public function up()
     {
-        // Code to create table
         Schema::dropIfExists('users');
         Schema::create('users', function (Blueprint $table) {
             $table->engine = 'InnoDB';
